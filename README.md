@@ -1,10 +1,22 @@
-# weather-app
+# Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to the Weather App, a Vue 3 application built with Vite.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+For the best development experience, it's recommended to use the following tools:
+
+- [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+
+## Getting Started
+
+1. Clone this repository:
+
+   ```sh
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+
 
 ## Customize configuration
 

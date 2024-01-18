@@ -38,7 +38,7 @@ export default {
         { label: 'Temperature', value: this.weatherData?.temp, unit: '°C' },
         { label: 'Feels Like', value: this.weatherData?.feels_like, unit: '°C' },
         { label: 'Wind Speed', value: this.weatherData?.wind_speed, unit: 'm/s' },
-        { label: 'Wind Degree', value: this.weatherData?.wind_deg, unit: '°C' },
+        { label: 'Wind Degree', value: this.weatherData?.wind_deg, unit: '°' },
         { label: 'Wind Gust', value: this.weatherData?.wind_gust, unit: 'm/s' },
         { label: 'Pressure', value: this.weatherData?.pressure, unit: 'hPa' },
         { label: 'Humidity', value: this.weatherData?.humidity, unit: '%' },
