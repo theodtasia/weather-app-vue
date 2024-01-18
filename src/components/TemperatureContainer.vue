@@ -1,10 +1,10 @@
 <template>
-  <div class="temperature-container bg-white p-4 rounded-lg shadow-md flex items-center justify-between">
+  <div class="wa=temperature-container bg-white p-4 rounded-lg shadow-md flex items-center justify-between">
     <div>
-      <span class="text-2xl md:text-6xl font-bold block">{{ temperature }}°C</span>
-      <p class="text-md sm:text-xl">{{ title }} - {{ description }}</p>
+      <span class="wa-temperature-container--value text-2xl md:text-6xl font-bold block">{{ temperature }}°C</span>
+      <p class="wa-temperature-container--title text-md sm:text-xl">{{ title }} - {{ description }}</p>
     </div>
-    <img v-if="icon" :src="icon" alt="Weather Icon" class="w-20 h-20 md:w-48 md:h-48"/>
+    <img class="wa-temperature-container--icon w-20 h-20 md:w-48 md:h-48" v-if="icon" :src="icon" alt="Weather Icon"/>
   </div>
 </template>
 

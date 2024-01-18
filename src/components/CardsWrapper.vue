@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 shadow-lg p-4 mb-4 border-0 w-full">
+  <div class="wa-base-buttons grid grid-cols-2 md:grid-cols-3 gap-4 shadow-lg p-8 mb-4 border-0 w-full">
     <CardItem
       v-for="(property, index) in weatherProperties"
       :key="index"

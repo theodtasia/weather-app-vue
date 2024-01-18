@@ -1,11 +1,7 @@
 @import './base.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #app {
-  width: 100%; /* Set the width to 100% for full width */
-  max-width: none; /* Remove the max-width constraint */
+  width: 100%; 
+  max-width: none; 
   margin: 0;
   padding: 2rem;
   font-weight: normal;

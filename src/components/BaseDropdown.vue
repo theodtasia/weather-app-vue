@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex justify-center text-center">
+  <div class="wa-base-dropdown relative flex justify-center text-center">
     <button @click="handleCurrentDate" type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 mr-2">
       Current Date
     </button>
@@ -56,17 +56,15 @@ export default {
 </script>
 
 <style scoped>
-/* Add scoped styles for BaseDropdown component */
-/* Adjust the spacing and hover effect */
+
 .space-y-1 > * + * {
-  margin-top: 1rem; /* Adjust the spacing between buttons */
+  margin-top: 1rem;
 }
 
 .space-y-1 button:hover {
-  background-color: #f4f5f7; /* Light gray hover effect */
+  background-color: #f4f5f7; 
 }
 
-/* Center the dropdown menu */
 .origin-top-right {
   left: 50%;
   transform: translateX(-50%);

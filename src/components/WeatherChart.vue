@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center mt-4 shadow-md otw-mx-4-em">
+  <div class="wa-weather-chat flex justify-center items-center mt-4 shadow-md otw-mx-4-em">
     <Line v-if="weeklyData" :data="chartData" :options="chartOptions" />
   </div>
 </template>
@@ -29,8 +29,6 @@ const chartData = weeklyData
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
-  width: 600, 
-  height: 400,
 };
 
 function getDayOfWeek(timestamp) {

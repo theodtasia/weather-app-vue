@@ -1,13 +1,17 @@
 <template>
-  <div class="w-full">
-    <BaseDropdown :dates="dates" @date-click="handleDateClick" />
-    <TemperatureContainer
-      v-if="weatherData"
-      :temperature="selectedDateData.temp"
-      :title="selectedDateData.weather[0].main"
-      :description="selectedDateData.weather[0].description"
-      :icon="'http://openweathermap.org/img/w/' + selectedDateData.weather[0].icon + '.png'"
-    />
+  <div class="wa-weather-app w-full my-4">
+    <div class="wa-weather-app--temperature-box p-8 shadow-md">
+      <div class="shadow-md py-4 mb-4">
+        <BaseDropdown :dates="dates" @date-click="handleDateClick" />
+      </div>
+      <TemperatureContainer
+        v-if="weatherData"
+        :temperature="selectedDateData.temp"
+        :title="selectedDateData.weather[0].main"
+        :description="selectedDateData.weather[0].description"
+        :icon="'http://openweathermap.org/img/w/' + selectedDateData.weather[0].icon + '.png'"
+      />
+    </div>
     <CardsWrapper v-if="weatherData" :weatherData="selectedDateData" />
     <WeatherChart v-if="weatherData" :weeklyData="weatherData.daily" />
   </div>

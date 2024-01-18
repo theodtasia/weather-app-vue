@@ -3,7 +3,7 @@
     v-for="date in dates"
     :key="date"
     @click="handleDateClick(date)"
-    class="border p-2 m-1 shadow-md rounded-md focus:outline-none focus:ring-indigo-500"
+    class="wa=base-buttons border p-2 m-1 shadow-md rounded-md focus:outline-none focus:ring-indigo-500"
   >
     {{ formatDate(date) }}
   </button>
@@ -30,8 +30,7 @@ export default {
 </script>
 
 <style scoped>
-/* Add hover effect */
 button:hover {
-  background-color: #e5e7eb; /* Add your preferred background color on hover */
+  background-color: #e5e7eb; 
 }
 </style>
