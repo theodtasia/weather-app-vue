@@ -1,13 +1,20 @@
 # Weather App
 
-Welcome to the Weather App, a Vue 3 application built with Vite.
+The Weather App is a Vue 3 application built with Vite, designed to provide users with up-to-date weather information. With an intuitive user interface, this app allows users to view current weather conditions, temperature forecasts, and other essential meteorological data. Leveraging Vue 3's reactivity and Vite's fast build times, the Weather App ensures a smooth and responsive user experience.
+
+## Features
+
+- **Real-time Weather Data:** Get the latest weather updates, including temperature, wind speed, humidity, and more.
+- **Forecast:** Plan ahead with the app's forecasting feature, providing a detailed overview of upcoming weather conditions.
+- **User-Friendly Interface:** The app boasts an easy-to-navigate interface, making it accessible to users of all levels.
+- **Customizable:** Tailor the app to your preferences, thanks to Vite's flexible configuration and Vue's component-based architecture.
+
 
 ## Recommended IDE Setup
 
 For the best development experience, it's recommended to use the following tools:
 
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
 ## Getting Started
 
