@@ -11,7 +11,7 @@
     <div v-if="isOpen" @click.prevent="closeDropdown" class="fixed inset-0 h-full w-full bg-black opacity-50 cursor-default"></div>
 
     <div v-if="isOpen"  @click.prevent="closeDropdown" class="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-      <div class="py-1 space-y-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <div class="py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <BaseButtons :dates="dates" @date-click="handleDateClick" />
       </div>
     </div>
@@ -56,15 +56,6 @@ export default {
 </script>
 
 <style scoped>
-
-.space-y-1 > * + * {
-  margin-top: 1rem;
-}
-
-.space-y-1 button:hover {
-  background-color: #f4f5f7; 
-}
-
 .origin-top-right {
   left: 50%;
   transform: translateX(-50%);
