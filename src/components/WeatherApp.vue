@@ -59,30 +59,28 @@ export default {
       return this.weatherData.daily.find(day => day.dt === timestamp);
     },
     calculateMeanTemperatures(data) {
-  if (data && typeof data === 'object' && data.day && data.night) {
-    const meanTemperature = (data.day + data.night) / 2;
-    data.mean = parseFloat(meanTemperature.toFixed(1));
-    return data.mean;
-  } else {
-    // Handle the case where data is not as expected
-    return null;
-  }
-},
+      if (data && typeof data === 'object' && data.day && data.night) {
+        const meanTemperature = (data.day + data.night) / 2;
+        data.mean = parseFloat(meanTemperature.toFixed(1));
+        return data.mean;
+      } else {
+        // Handle the case where data is not as expected
+        return null;
+      }
+    },
+    updateSelectedDateData() {
+      if (this.selectedFutureDate && this.weatherData) {
+        const selectedDateData = this.getDateData(this.selectedFutureDate);
 
-updateSelectedDateData() {
-  if (this.selectedFutureDate && this.weatherData) {
-    const selectedDateData = this.getDateData(this.selectedFutureDate);
-
-    if (selectedDateData) {
-      this.selectedDateData = selectedDateData;
-      this.selectedDateData.temp = this.calculateMeanTemperatures(selectedDateData.temp);
-      this.selectedDateData.feels_like = this.calculateMeanTemperatures(selectedDateData.feels_like);
-    }
-  } else {
-    this.selectedDateData = this.weatherData?.current || null;
-  }
-},
-
+        if (selectedDateData) {
+          this.selectedDateData = selectedDateData;
+          this.selectedDateData.temp = this.calculateMeanTemperatures(selectedDateData.temp);
+          this.selectedDateData.feels_like = this.calculateMeanTemperatures(selectedDateData.feels_like);
+        }
+      } else {
+        this.selectedDateData = this.weatherData?.current || null;
+      }
+    },
   },
 };
 </script>

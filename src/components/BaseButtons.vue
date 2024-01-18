@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     handleDateClick(date) {
-      console.log(date)
       this.$emit('date-click', date);
     },
     formatDate(date) {
